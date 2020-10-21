@@ -57,6 +57,9 @@ You can use /qom command too
 
 ### Quest-o-matic changelog
 
+**9.0**
+- Shadowlands Update
+
 **2.6**
 - Updated TOC to 7.1
 - Added files locales.xml and embeds.xml to load dependencies
