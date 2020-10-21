@@ -288,32 +288,32 @@ end
 
 function QOM:QUEST_GREETING(eventName, ...)
     if QOM:CheckConfigs() and self.db.char.greeting then
-        local numact,numava = GetNumActiveQuests(), GetNumAvailableQuests()
+        local numact,numava = C_GossipInfo.GetNumActiveQuests(), C_GossipInfo.GetNumAvailableQuests()
         if numact+numava == 0 then return end
 
         if numava > 0 then
-            SelectAvailableQuest(1)
+            C_QuestLog.SelectAvailableQuest(1)
         end
         if numact > 0 then
-            SelectActiveQuest(1)
+            C_QuestLog.SelectActiveQuest(1)
         end
     end
 end
 
 function QOM:GOSSIP_SHOW(eventName, ...)
     if QOM:CheckConfigs() and self.db.char.greeting then
-        if GetGossipAvailableQuests() then
-            SelectGossipAvailableQuest(1)
-        elseif GetGossipActiveQuests() then
-            SelectGossipActiveQuest(1)
+        if C_GossipInfo.GetAvailableQuests() then
+            C_GossipInfo.SelectAvailableQuest(1)
+        elseif C_GossipInfo.GetActiveQuests() then
+            C_GossipInfo.SelectActiveQuest(1)
         end
     end
 end
 
 function QOM:QUEST_DETAIL(eventName, ...)
-    if QOM:CheckConfigs() and QOM:CheckQuestData() and self.db.char.accept then
-        AcceptQuest()
-    end
+	if QOM:CheckConfigs() and QOM:CheckQuestData() and self.db.char.accept then
+		AcceptQuest()
+	end
 end
 
 function QOM:QUEST_ACCEPT_CONFIRM(eventName, ...)
@@ -339,7 +339,7 @@ function QOM:QUEST_COMPLETE(eventName, ...)
 end
 
 function QOM:QUEST_LOG_UPDATE(eventName, ...)
-    numEntries, numQuests = GetNumQuestLogEntries()
+    numEntries, numQuests = C_QuestLog.GetNumQuestLogEntries()
     dailyComplete = GetDailyQuestsCompleted()
     if self.db.char.record < dailyComplete then
         self.db.char.record = dailyComplete
