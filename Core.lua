@@ -292,10 +292,10 @@ function QOM:QUEST_GREETING(eventName, ...)
         if numact+numava == 0 then return end
 
         if numava > 0 then
-            C_QuestLog.SelectAvailableQuest(1)
+            C_GossipInfo.SelectAvailableQuest(C_GossipInfo.GetAvailableQuests()[1]["questID"])
         end
         if numact > 0 then
-            C_QuestLog.SelectActiveQuest(1)
+            C_GossipInfo.SelectActiveQuest(C_GossipInfo.GetActiveQuests()[1]["questID"])
         end
     end
 end
@@ -303,9 +303,9 @@ end
 function QOM:GOSSIP_SHOW(eventName, ...)
     if QOM:CheckConfigs() and self.db.char.greeting then
         if C_GossipInfo.GetAvailableQuests() then
-            C_GossipInfo.SelectAvailableQuest(1)
+            C_GossipInfo.SelectAvailableQuest(C_GossipInfo.GetAvailableQuests()[1]["questID"])
         elseif C_GossipInfo.GetActiveQuests() then
-            C_GossipInfo.SelectActiveQuest(1)
+            C_GossipInfo.SelectActiveQuest(C_GossipInfo.GetActiveQuests()[1]["questID"])
         end
     end
 end
