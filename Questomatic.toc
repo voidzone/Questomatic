@@ -1,16 +1,15 @@
-## Interface: 90002
+## Interface: 100207
 
 ## Title: Quest-o-matic
 ## Notes: Auto accepting nor turning in quests
-## Author: Elvenbane
-## Version: 9.0
+## Author: Elvenbane, RiskyNet
+## Version: 10.2.7
 
 ## SavedVariables: QOMDB
 ## OptionalDeps: Ace3
 
 ## X-Embeds: Ace3
 ## X-Category: Quests
-## X-Curse-Packaged-Version: 9.0
 ## X-Curse-Project-Name: Questomatic
 ## X-Curse-Project-ID: questomatic
 

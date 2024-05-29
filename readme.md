@@ -43,6 +43,9 @@ You can use /qom command too
 
 #### Sources
 
+[Quest-o-matic on Curse](http://wow.curse.com/downloads/wow-addons/details/questomatic.aspx),
+[Quest-o-matic on CurseForge](http://wow.curseforge.com/addons/questomatic/),
+[Quest-o-matic on WoWInterface](http://www.wowinterface.com/downloads/info14119-Quest-o-matic.html),
 [Quest-o-matic on GitHub](http://github.com/jofner/Questomatic)
 
 ### Quest-o-matic limitations / issues / to-do
@@ -53,9 +56,6 @@ You can use /qom command too
     option for PvP flag quests, but this doesn't work for normal PvP quests
 
 ### Quest-o-matic changelog
-
-**9.0**
-- Shadowlands Update
 
 **2.6**
 - Updated TOC to 7.1
