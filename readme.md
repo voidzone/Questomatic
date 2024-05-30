@@ -22,8 +22,6 @@ means that the addon is enabled, exclamation point means it is disabled. Left cl
 of the addon, right click opens the settings. If you have no LDB display addon, you can still have
 minimap icon with same functionality.
 
-[Quest-o-matic was mentioned in Spotligth at Curse](https://mods.curse.com/spotlight/addons/wow/49154-world-of-warcraft-spotlight-quest-o-matic)
-
 ## Quest-o-matic Config and commands
 
 There is two ways to config Quest-o-matic. Config dialog - press ESC > Interface > AddOns > Quest-o-matic, or chat commands:
@@ -43,10 +41,8 @@ You can use /qom command too
 
 #### Sources
 
-[Quest-o-matic on Curse](http://wow.curse.com/downloads/wow-addons/details/questomatic.aspx),
-[Quest-o-matic on CurseForge](http://wow.curseforge.com/addons/questomatic/),
-[Quest-o-matic on WoWInterface](http://www.wowinterface.com/downloads/info14119-Quest-o-matic.html),
 [Quest-o-matic on GitHub](http://github.com/jofner/Questomatic)
+- [Elvenbane's Fork](https://github.com/voidzone/Questomatic)
 
 ### Quest-o-matic limitations / issues / to-do
 
@@ -56,6 +52,11 @@ You can use /qom command too
     option for PvP flag quests, but this doesn't work for normal PvP quests
 
 ### Quest-o-matic changelog
+
+**2.7**
+- Fix auto-accept logic
+- TOC updates
+- Auto Packaging
 
 **2.6**
 - Updated TOC to 7.1
