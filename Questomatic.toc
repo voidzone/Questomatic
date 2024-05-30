@@ -2,8 +2,8 @@
 
 ## Title: Quest-o-matic
 ## Notes: Auto accepting nor turning in quests
-## Author: Elvenbane, RiskyNet
-## Version: 10.2.7
+## Author: Elvenbane, RiskyNet
+## Version: @project-version@
 
 ## SavedVariables: QOMDB
 ## OptionalDeps: Ace3
