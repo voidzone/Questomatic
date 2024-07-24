@@ -22,7 +22,7 @@ local QOMLDB = LibStub("LibDataBroker-1.1"):NewDataObject("Questomatic",{
             end
             QOM:toggleIcon(QOM.db.char.toggle)
         else
-            InterfaceOptionsFrame_OpenToCategory("Questomatic")
+            Settings.OpenToCategory("Questomatic")
         end
 
         LibQTip:Release(tooltip)
@@ -229,7 +229,7 @@ local options = {
             type = "execute",
             name = L["Config"],
             desc = L["Open configuration"],
-            func = function() InterfaceOptionsFrame_OpenToCategory("Questomatic") end,
+            func = function() Settings.OpenToCategory("Questomatic") end,
             guiHidden = true,
         },
     },
