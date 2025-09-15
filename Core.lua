@@ -302,9 +302,9 @@ end
 
 function QOM:GOSSIP_SHOW(eventName, ...)
     if QOM:CheckConfigs() and self.db.char.greeting then
-        if C_GossipInfo.GetAvailableQuests() then
+        if C_GossipInfo.GetAvailableQuests() and C_GossipInfo.GetAvailableQuests()[1] then
             C_GossipInfo.SelectAvailableQuest(C_GossipInfo.GetAvailableQuests()[1]["questID"])
-        elseif C_GossipInfo.GetActiveQuests() then
+        elseif C_GossipInfo.GetActiveQuests() and C_GossipInfo.GetActiveQuests()[1] then
             C_GossipInfo.SelectActiveQuest(C_GossipInfo.GetActiveQuests()[1]["questID"])
         end
     end
